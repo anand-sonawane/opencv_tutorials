@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread('watch.jpg',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('Images/watch.jpg',cv2.IMREAD_GRAYSCALE)
 #gray scale : so we convert to grey scale to make it easy and fast, also it removes alpha channels
 #options for second parameter are IMREAD_GRAYSCALE,IMREAD_COLOR,IMREAD_UNCHANGED
 #opencv : BGR

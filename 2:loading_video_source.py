@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-# 1 here tells you the number of your webcam
-cap = cv2.VideoCapture(1)
+# 0 here tells you the number of your webcam
+cap = cv2.VideoCapture(0)
 # to load an recorded VideoCapture
 # cap = cv2.VideoCapture('video.mp4')
 # to download the video that is being captured

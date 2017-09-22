@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('watch.jpg',cv2.IMREAD_COLOR)
+img = cv2.imread('Images/watch.jpg',cv2.IMREAD_COLOR)
 
 #referencing a specific pixel
 px = img[55,55]

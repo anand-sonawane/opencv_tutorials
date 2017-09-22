@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 # 500 x 250 : both the images must be of same size exactly
-img1 = cv2.imread('3D-Matplotlib.png')
-img2 = cv2.imread('mainsvmimage.png')
+img1 = cv2.imread('Images/3D-Matplotlib.png')
+img2 = cv2.imread('Images/mainsvmimage.png')
 
 #superimposes one image over the other image
 #add = img1+img2
@@ -23,5 +23,6 @@ add = cv2.addWeighted(img1, 0.7, img2, 0.3, 0)
 #5: brightness of the total image
 
 cv2.imshow('add',add)
+cv2.imwrite('Images/Image Blending Result.jpg',add)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

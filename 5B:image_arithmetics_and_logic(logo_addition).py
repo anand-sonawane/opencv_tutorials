@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 # 500 x 250 : both the images must be of same size exactly
-img1 = cv2.imread('3D-Matplotlib.png')
-img2 = cv2.imread('mainlogo.png')
+img1 = cv2.imread('Images/3D-Matplotlib.png')
+img2 = cv2.imread('Images/mainlogo.png')
 
 #ROI the top left corner
 rows,cols,channel = img2.shape
@@ -47,6 +47,7 @@ cv2.imshow('Image 1 background',img1_bg)
 cv2.imshow('Image 2 foreground',img2_fg)
 cv2.imshow('Resulted ROI',dst)
 cv2.imshow('Final Image',img1)
+cv2.imwrite('Images/Logo Addition Final Image.jpg',img1)
 #Mask is Black background
 #Inv Mask is White background
 #Image 1 background is Inverse Mask plus the chart image area of the image in the background
